@@ -1,0 +1,1023 @@
+{
+    "blocks": [
+        {
+            "code": "\u041d\u0430\u0447\u0430\u043b\u043e",
+            "cur_el_id": "2132d9695aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": -100,
+            "text": "\u041d\u0430\u0447\u0430\u043b\u043e",
+            "width": 100,
+            "height": 40,
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 0
+        },
+        {
+            "code": "tests,score,no_test_error_msg,test_index,f_string,test,task,line,test_ids,question,f,right_answer,tasks,test_name,cur_task,user_name",
+            "cur_el_id": "2132d9685aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 0,
+            "text": "tests,score,no_test_error_msg,test_index,f_string,test,task,line,test_ids,question,f,right_answer,tasks,test_name,cur_task,user_name",
+            "width": 1188,
+            "height": 40,
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 1
+        },
+        {
+            "code": "from random import shuffle\nfrom uuid import uuid1\nfrom os import listdir\nno_test_error_msg = '\u0422\u0435\u0441\u0442\u0430 \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u0438\u043b\u0438 \u0432\u0432\u0435\u0434\u0435\u043d \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440'\ndef get_parsed_test(f):\ntest = {}\ncur_task = []",
+            "cur_el_id": "2132d96a5aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 100,
+            "text": "from random import shuffle\nfrom uuid import uuid1\nfrom os import listdir\nno_test_error_msg = '\u0422\u0435\u0441\u0442\u0430 \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u0438\u043b\u0438 \u0432\u0432\u0435\u0434\u0435\u043d \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440'\ndef get_parsed_test(f):\ntest = {}\ncur_task = []",
+            "width": 639,
+            "height": 56,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 2
+        },
+        {
+            "code": "for line in f:",
+            "cur_el_id": "2132d96b5aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 200,
+            "text": "for line in f:",
+            "width": 126,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 3
+        },
+        {
+            "code": "line = line.strip()",
+            "cur_el_id": "2132d96c5aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d96b5aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 300,
+            "text": "line = line.strip()",
+            "width": 171,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 4
+        },
+        {
+            "code": "if not line.isdigit():",
+            "cur_el_id": "2132d96d5aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d96b5aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 400,
+            "text": "if not line.isdigit():",
+            "width": 198,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 5
+        },
+        {
+            "code": "cur_task.append(line)",
+            "cur_el_id": "2132d96e5aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d96d5aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 500,
+            "text": "cur_task.append(line)",
+            "width": 189,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 6
+        },
+        {
+            "code": "else:",
+            "cur_el_id": "2132d96f5aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d96b5aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 600,
+            "text": "else:",
+            "width": 100,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 7
+        },
+        {
+            "code": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []",
+            "cur_el_id": "2132d9705aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d96f5aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 700,
+            "text": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []",
+            "width": 369,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 8
+        },
+        {
+            "code": "return test\ndef game(test_name):\ntry:\nf = open(f'tests/{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids = list(tasks.keys())\nshuffle(test_ids)\nscore = 0",
+            "cur_el_id": "2132d9715aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 800,
+            "text": "return test\ndef game(test_name):\ntry:\nf = open(f'tests/{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids = list(tasks.keys())\nshuffle(test_ids)\nscore = 0",
+            "width": 306,
+            "height": 80,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 9
+        },
+        {
+            "code": "for test_id in test_ids:",
+            "cur_el_id": "2132d9725aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 900,
+            "text": "for test_id in test_ids:",
+            "width": 216,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 10
+        },
+        {
+            "code": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)\nprint(f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}')",
+            "cur_el_id": "2132d9735aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d9725aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1000,
+            "text": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)\nprint(f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}')",
+            "width": 504,
+            "height": 48,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 11
+        },
+        {
+            "code": "for answer_index in range(0, len(task)):",
+            "cur_el_id": "2132d9745aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d9725aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1100,
+            "text": "for answer_index in range(0, len(task)):",
+            "width": 360,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 12
+        },
+        {
+            "code": "print(f'{answer_index+1} -> {task[answer_index]}')",
+            "cur_el_id": "2132d9755aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d9745aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1200,
+            "text": "print(f'{answer_index+1} -> {task[answer_index]}')",
+            "width": 450,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 13
+        },
+        {
+            "code": "if right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]:",
+            "cur_el_id": "2132d9765aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d9725aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1300,
+            "text": "if right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]:",
+            "width": 666,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 14
+        },
+        {
+            "code": "score += 1",
+            "cur_el_id": "2132d9775aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d9765aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1400,
+            "text": "score += 1",
+            "width": 100,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 15
+        },
+        {
+            "code": "f.close()\nreturn f'{score}/{str(len(tasks))}'\ndef update_leader_board(user_name, score, test_name):\nf = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()\nreturn f_string\ndef main():\nuser_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests/')",
+            "cur_el_id": "2132d9785aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1500,
+            "text": "f.close()\nreturn f'{score}/{str(len(tasks))}'\ndef update_leader_board(user_name, score, test_name):\nf = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()\nreturn f_string\ndef main():\nuser_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests/')",
+            "width": 486,
+            "height": 112,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 16
+        },
+        {
+            "code": "for i in range(len(tests)):",
+            "cur_el_id": "2132d9795aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1600,
+            "text": "for i in range(len(tests)):",
+            "width": 243,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 17
+        },
+        {
+            "code": "tests[i] = tests[i].replace('.txt', '')",
+            "cur_el_id": "2132d97a5aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d9795aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1700,
+            "text": "tests[i] = tests[i].replace('.txt', '')",
+            "width": 351,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 18
+        },
+        {
+            "code": "for i in range(0, len(tests)):",
+            "cur_el_id": "2132d97b5aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1800,
+            "text": "for i in range(0, len(tests)):",
+            "width": 270,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 19
+        },
+        {
+            "code": "print(f'{i+1} -> {tests[i]}')",
+            "cur_el_id": "2132d97c5aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d97b5aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1900,
+            "text": "print(f'{i+1} -> {tests[i]}')",
+            "width": 261,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 20
+        },
+        {
+            "code": "try:\ntest_index = int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n')) - 1",
+            "cur_el_id": "2132d97d5aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2000,
+            "text": "try:\ntest_index = int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n')) - 1",
+            "width": 477,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 21
+        },
+        {
+            "code": "if test_index < 0:",
+            "cur_el_id": "2132d97e5aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2100,
+            "text": "if test_index < 0:",
+            "width": 162,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 22
+        },
+        {
+            "code": "raise IndexError",
+            "cur_el_id": "2132d97f5aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d97e5aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2200,
+            "text": "raise IndexError",
+            "width": 144,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 23
+        },
+        {
+            "code": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)\nprint(update_leader_board(user_name, score, test_name))",
+            "cur_el_id": "2132d9805aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2300,
+            "text": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)\nprint(update_leader_board(user_name, score, test_name))",
+            "width": 495,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 24
+        },
+        {
+            "code": "if __name__ == '__main__':",
+            "cur_el_id": "2132d9815aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2400,
+            "text": "if __name__ == '__main__':",
+            "width": 234,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 25
+        },
+        {
+            "code": "main()",
+            "cur_el_id": "2132d9825aa311edbecb87e2cf7c285f",
+            "parent_id": "2132d9815aa311edbecb87e2cf7c285f",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2500,
+            "text": "main()",
+            "width": 100,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 26
+        },
+        {
+            "code": "\u041a\u043e\u043d\u0435\u0446",
+            "cur_el_id": "2132d9835aa311edbecb87e2cf7c285f",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2600,
+            "text": "\u041a\u043e\u043d\u0435\u0446",
+            "width": 100,
+            "height": 40,
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 27
+        }
+    ],
+    "arrows": [
+        {
+            "startIndex": 0,
+            "endIndex": 1,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": -100
+                },
+                {
+                    "x": 614,
+                    "y": -100
+                },
+                {
+                    "x": 614,
+                    "y": -40
+                },
+                {
+                    "x": 0,
+                    "y": -40
+                },
+                {
+                    "x": 0,
+                    "y": 40
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 1,
+            "endIndex": 2,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 343,
+                    "y": 0
+                },
+                {
+                    "x": 343,
+                    "y": 60
+                },
+                {
+                    "x": 100,
+                    "y": 60
+                },
+                {
+                    "x": 100,
+                    "y": 140
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 2,
+            "endIndex": 3,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 100
+                },
+                {
+                    "x": 342,
+                    "y": 100
+                },
+                {
+                    "x": 342,
+                    "y": 160
+                },
+                {
+                    "x": 200,
+                    "y": 160
+                },
+                {
+                    "x": 200,
+                    "y": 240
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 3,
+            "endIndex": 9,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 200
+                },
+                {
+                    "x": 221,
+                    "y": 200
+                },
+                {
+                    "x": 221,
+                    "y": 760
+                },
+                {
+                    "x": 800,
+                    "y": 760
+                },
+                {
+                    "x": 800,
+                    "y": 840
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 9,
+            "endIndex": 10,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 800
+                },
+                {
+                    "x": 190,
+                    "y": 800
+                },
+                {
+                    "x": 190,
+                    "y": 860
+                },
+                {
+                    "x": 900,
+                    "y": 860
+                },
+                {
+                    "x": 900,
+                    "y": 940
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 10,
+            "endIndex": 16,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 900
+                },
+                {
+                    "x": 369,
+                    "y": 900
+                },
+                {
+                    "x": 369,
+                    "y": 1460
+                },
+                {
+                    "x": 1500,
+                    "y": 1460
+                },
+                {
+                    "x": 1500,
+                    "y": 1540
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 16,
+            "endIndex": 17,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1500
+                },
+                {
+                    "x": 278,
+                    "y": 1500
+                },
+                {
+                    "x": 278,
+                    "y": 1560
+                },
+                {
+                    "x": 1600,
+                    "y": 1560
+                },
+                {
+                    "x": 1600,
+                    "y": 1640
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 17,
+            "endIndex": 19,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1600
+                },
+                {
+                    "x": 187,
+                    "y": 1600
+                },
+                {
+                    "x": 187,
+                    "y": 1760
+                },
+                {
+                    "x": 1800,
+                    "y": 1760
+                },
+                {
+                    "x": 1800,
+                    "y": 1840
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 19,
+            "endIndex": 21,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1800
+                },
+                {
+                    "x": 246,
+                    "y": 1800
+                },
+                {
+                    "x": 246,
+                    "y": 1960
+                },
+                {
+                    "x": 2000,
+                    "y": 1960
+                },
+                {
+                    "x": 2000,
+                    "y": 2040
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 21,
+            "endIndex": 22,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2000
+                },
+                {
+                    "x": 95,
+                    "y": 2000
+                },
+                {
+                    "x": 95,
+                    "y": 2060
+                },
+                {
+                    "x": 2100,
+                    "y": 2060
+                },
+                {
+                    "x": 2100,
+                    "y": 2140
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 22,
+            "endIndex": 24,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2100
+                },
+                {
+                    "x": 274,
+                    "y": 2100
+                },
+                {
+                    "x": 274,
+                    "y": 2260
+                },
+                {
+                    "x": 2300,
+                    "y": 2260
+                },
+                {
+                    "x": 2300,
+                    "y": 2340
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 24,
+            "endIndex": 25,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2300
+                },
+                {
+                    "x": 123,
+                    "y": 2300
+                },
+                {
+                    "x": 123,
+                    "y": 2360
+                },
+                {
+                    "x": 2400,
+                    "y": 2360
+                },
+                {
+                    "x": 2400,
+                    "y": 2440
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 25,
+            "endIndex": 27,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2400
+                },
+                {
+                    "x": 62,
+                    "y": 2400
+                },
+                {
+                    "x": 62,
+                    "y": 2560
+                },
+                {
+                    "x": 2600,
+                    "y": 2560
+                },
+                {
+                    "x": 2600,
+                    "y": 2640
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        }
+    ],
+    "x0": 0,
+    "y0": 0
+}
