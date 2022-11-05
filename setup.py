@@ -8,7 +8,7 @@ setup(name='Python2FlowChart',
       author_email='name50525@gmail.com',
       license='GPL-3.0',
       packages=['Python2FlowChart'],
-      install_requires=["PyChart"],
+      install_requires=[],
       zip_safe=False,
       entry_points={
         'console_scripts': [
