@@ -1,8 +1,8 @@
 import re
-from PyChart.Preprocessor import Preprocessor
+from PyChart import Preprocessor
 
 
-class PythonPreprocessor(Preprocessor):
+class PyPreprocessor(Preprocessor):
 
     def _parse(self) -> None:
         # split file by '\n'
@@ -75,7 +75,7 @@ class PythonPreprocessor(Preprocessor):
 
     @staticmethod
     def _increase_level_of_line(line, increase) -> str:
-        level = PythonPreprocessor._get_level_of_line(line)
+        level = PyPreprocessor._get_level_of_line(line)
         return line.replace('    ' * level, '    ' * (level+increase))
 
     @staticmethod
@@ -121,8 +121,7 @@ class PythonPreprocessor(Preprocessor):
 
         return m
 
-    @staticmethod
-    def _get_function_name(line: str) -> str:
+    def _get_function_name(self, line: str) -> str:
         line = re.sub(r'def |\:', '', line)
         output = ''
         for i in line:
@@ -133,8 +132,7 @@ class PythonPreprocessor(Preprocessor):
         
         return output
 
-    @staticmethod
-    def _get_fun_args(line: str, fun_name='') -> list:
+    def _get_fun_args(self, line: str, fun_name='') -> list:
         line = line[line.index(f'{fun_name}(')+len(fun_name) + 1:line.index(')')] + ','
         args = []
         last_arg = ''
@@ -154,5 +152,4 @@ class PythonPreprocessor(Preprocessor):
     def _is_control_structure(line: str) -> bool:
         line = line.strip()
 
-        return line[0:2] == 'if' or line[0:3] == 'for' or line[0:5] == 'while' or line[0:4] == 'else' or line[0:3] == 'def '
-
+        return line[0:2] == 'if' or line[0:3] == 'for' or line[0:5] == 'while' or line[0:4] == 'else' or line[0:4] == 'def '

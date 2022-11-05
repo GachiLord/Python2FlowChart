@@ -1,5 +1,11 @@
-from Python2FlowChart.PythonPreprocessor import PythonPreprocessor
-from Python2FlowChart.Py2BlockDiagram import Py2BlockDiagram
+try:
+    from Python2FlowChart.PyPreprocessor import PyPreprocessor
+    from Python2FlowChart.Py2BlockDiagram import Py2BlockDiagram
+    from Python2FlowChart.Py2PseudoCode import Py2PseudoCode
+except ModuleNotFoundError:
+    from PyPreprocessor import PyPreprocessor
+    from Py2BlockDiagram import Py2BlockDiagram
+    from Py2PseudoCode import Py2PseudoCode
 import sys
 import json
 
@@ -10,12 +16,16 @@ def main():
     try:
         file_path = args[0]
         f = open(file_path, 'r', encoding='utf-8')
-    except FileNotFoundError:
-        exit('wrong path')
+    except:
+        try:
+            file_path = input('path: ')
+            f = open(file_path, 'r', encoding='utf-8')
+        except FileNotFoundError:
+            exit('wrong path')
 
-    p = PythonPreprocessor(f)
+    p = PyPreprocessor(f)
     programs_list = p.get_programs_list()
-    diagram = Py2BlockDiagram.build_from_programs_list(programs_list)
+    diagram = Py2BlockDiagram.build_from_programs_list(programs_list, Py2PseudoCode, Py2BlockDiagram)
 
     f.close()
 

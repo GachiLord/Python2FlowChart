@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='Python2FlowChart',
-      version='0.5.0',
+      version='0.5.1',
       description='CLI-tool translating python to json for block-diagram-redactor site',
       url='',
       author='GachiLord',

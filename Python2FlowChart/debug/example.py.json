@@ -1,14 +1,14 @@
 {
     "blocks": [
         {
-            "code": "\u041d\u0430\u0447\u0430\u043b\u043e",
-            "cur_el_id": "2132d9695aa311edbecb87e2cf7c285f",
+            "code": "\u041d\u0430\u0447\u0430\u043b\u043e get_parsed_test",
+            "cur_el_id": "7542db6b5d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": -100,
-            "text": "\u041d\u0430\u0447\u0430\u043b\u043e",
-            "width": 100,
+            "text": "\u041d\u0430\u0447\u0430\u043b\u043e get_parsed_test\n",
+            "width": 198,
             "height": 40,
             "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
@@ -21,14 +21,14 @@
             "index": 0
         },
         {
-            "code": "tests,score,no_test_error_msg,test_index,f_string,test,task,line,test_ids,question,f,right_answer,tasks,test_name,cur_task,user_name",
-            "cur_el_id": "2132d9685aa311edbecb87e2cf7c285f",
+            "code": "test,line,cur_task,f",
+            "cur_el_id": "7542db6a5d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 0,
-            "text": "tests,score,no_test_error_msg,test_index,f_string,test,task,line,test_ids,question,f,right_answer,tasks,test_name,cur_task,user_name",
-            "width": 1188,
+            "text": "test,line,cur_task,f\n",
+            "width": 180,
             "height": 40,
             "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
             "isMenuBlock": false,
@@ -41,15 +41,15 @@
             "index": 1
         },
         {
-            "code": "from random import shuffle\nfrom uuid import uuid1\nfrom os import listdir\nno_test_error_msg = '\u0422\u0435\u0441\u0442\u0430 \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u0438\u043b\u0438 \u0432\u0432\u0435\u0434\u0435\u043d \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440'\ndef get_parsed_test(f):\ntest = {}\ncur_task = []",
-            "cur_el_id": "2132d96a5aa311edbecb87e2cf7c285f",
+            "code": "test = {}\ncur_task = []",
+            "cur_el_id": "7542db6c5d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 100,
-            "text": "from random import shuffle\nfrom uuid import uuid1\nfrom os import listdir\nno_test_error_msg = '\u0422\u0435\u0441\u0442\u0430 \u043d\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u0438\u043b\u0438 \u0432\u0432\u0435\u0434\u0435\u043d \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440'\ndef get_parsed_test(f):\ntest = {}\ncur_task = []",
-            "width": 639,
-            "height": 56,
+            "text": "test = {}\ncur_task = []\n",
+            "width": 117,
+            "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
             "fontSize": 14,
@@ -62,15 +62,15 @@
         },
         {
             "code": "for line in f:",
-            "cur_el_id": "2132d96b5aa311edbecb87e2cf7c285f",
+            "cur_el_id": "7542db6d5d0b11eda169f3585775a667",
             "parent_id": "0",
-            "struct_type": "block",
+            "struct_type": "loop",
             "x": 0,
             "y": 200,
-            "text": "for line in f:",
+            "text": "line in f",
             "width": 126,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0426\u0438\u043a\u043b for",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -82,12 +82,12 @@
         },
         {
             "code": "line = line.strip()",
-            "cur_el_id": "2132d96c5aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d96b5aa311edbecb87e2cf7c285f",
+            "cur_el_id": "7542db6e5d0b11eda169f3585775a667",
+            "parent_id": "7542db6d5d0b11eda169f3585775a667",
             "struct_type": "block",
             "x": 0,
             "y": 300,
-            "text": "line = line.strip()",
+            "text": "line = line.strip()\n",
             "width": 171,
             "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
@@ -102,15 +102,15 @@
         },
         {
             "code": "if not line.isdigit():",
-            "cur_el_id": "2132d96d5aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d96b5aa311edbecb87e2cf7c285f",
-            "struct_type": "block",
+            "cur_el_id": "7542db6f5d0b11eda169f3585775a667",
+            "parent_id": "7542db6d5d0b11eda169f3585775a667",
+            "struct_type": "if",
             "x": 0,
             "y": 400,
-            "text": "if not line.isdigit():",
+            "text": "not line.isdigit()",
             "width": 198,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -122,12 +122,12 @@
         },
         {
             "code": "cur_task.append(line)",
-            "cur_el_id": "2132d96e5aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d96d5aa311edbecb87e2cf7c285f",
+            "cur_el_id": "7542db705d0b11eda169f3585775a667",
+            "parent_id": "7542db6f5d0b11eda169f3585775a667",
             "struct_type": "block",
-            "x": 0,
+            "x": 189,
             "y": 500,
-            "text": "cur_task.append(line)",
+            "text": "cur_task.append(line)\n",
             "width": 189,
             "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
@@ -141,14 +141,14 @@
             "index": 6
         },
         {
-            "code": "else:",
-            "cur_el_id": "2132d96f5aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d96b5aa311edbecb87e2cf7c285f",
+            "code": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []",
+            "cur_el_id": "7542db725d0b11eda169f3585775a667",
+            "parent_id": "7542db6f5d0b11eda169f3585775a667-else",
             "struct_type": "block",
-            "x": 0,
-            "y": 600,
-            "text": "else:",
-            "width": 100,
+            "x": -189,
+            "y": 500,
+            "text": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []\n",
+            "width": 369,
             "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
@@ -161,16 +161,16 @@
             "index": 7
         },
         {
-            "code": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []",
-            "cur_el_id": "2132d9705aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d96f5aa311edbecb87e2cf7c285f",
+            "code": "return test",
+            "cur_el_id": "7542db735d0b11eda169f3585775a667",
+            "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 700,
-            "text": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []",
-            "width": 369,
+            "text": "\u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430 test",
+            "width": 100,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -181,16 +181,16 @@
             "index": 8
         },
         {
-            "code": "return test\ndef game(test_name):\ntry:\nf = open(f'tests/{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids = list(tasks.keys())\nshuffle(test_ids)\nscore = 0",
-            "cur_el_id": "2132d9715aa311edbecb87e2cf7c285f",
+            "code": "\u041d\u0430\u0447\u0430\u043b\u043e game",
+            "cur_el_id": "7542db755d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 800,
-            "text": "return test\ndef game(test_name):\ntry:\nf = open(f'tests/{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids = list(tasks.keys())\nshuffle(test_ids)\nscore = 0",
-            "width": 306,
-            "height": 80,
-            "type": "\u0411\u043b\u043e\u043a",
+            "text": "\u041d\u0430\u0447\u0430\u043b\u043e game\n",
+            "width": 100,
+            "height": 40,
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -201,16 +201,16 @@
             "index": 9
         },
         {
-            "code": "for test_id in test_ids:",
-            "cur_el_id": "2132d9725aa311edbecb87e2cf7c285f",
+            "code": "test_ids,question,task,right_answer,tasks,score,f,test_name",
+            "cur_el_id": "7542db745d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 900,
-            "text": "for test_id in test_ids:",
-            "width": 216,
+            "text": "test_ids,question,task,right_answer,tasks,score,f,test_name\n",
+            "width": 531,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -221,15 +221,15 @@
             "index": 10
         },
         {
-            "code": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)\nprint(f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}')",
-            "cur_el_id": "2132d9735aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d9725aa311edbecb87e2cf7c285f",
+            "code": "try:\nf = open(f'tests/{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids = list(tasks.keys())\nshuffle(test_ids)\nscore = 0",
+            "cur_el_id": "7542db765d0b11eda169f3585775a667",
+            "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 1000,
-            "text": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)\nprint(f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}')",
-            "width": 504,
-            "height": 48,
+            "text": "try:\nf = open(f'tests\u00f7{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids =tasks.keys()\nshuffle(test_ids)\nscore = 0\n",
+            "width": 306,
+            "height": 64,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
             "fontSize": 14,
@@ -241,16 +241,16 @@
             "index": 11
         },
         {
-            "code": "for answer_index in range(0, len(task)):",
-            "cur_el_id": "2132d9745aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d9725aa311edbecb87e2cf7c285f",
-            "struct_type": "block",
+            "code": "for test_id in test_ids:",
+            "cur_el_id": "7542db775d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "loop",
             "x": 0,
             "y": 1100,
-            "text": "for answer_index in range(0, len(task)):",
-            "width": 360,
+            "text": "test_id in test_ids",
+            "width": 216,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0426\u0438\u043a\u043b for",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -261,14 +261,14 @@
             "index": 12
         },
         {
-            "code": "print(f'{answer_index+1} -> {task[answer_index]}')",
-            "cur_el_id": "2132d9755aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d9745aa311edbecb87e2cf7c285f",
+            "code": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)",
+            "cur_el_id": "7542db785d0b11eda169f3585775a667",
+            "parent_id": "7542db775d0b11eda169f3585775a667",
             "struct_type": "block",
             "x": 0,
             "y": 1200,
-            "text": "print(f'{answer_index+1} -> {task[answer_index]}')",
-            "width": 450,
+            "text": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)\n",
+            "width": 504,
             "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
@@ -281,16 +281,16 @@
             "index": 13
         },
         {
-            "code": "if right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]:",
-            "cur_el_id": "2132d9765aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d9725aa311edbecb87e2cf7c285f",
-            "struct_type": "block",
+            "code": "print(f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}')",
+            "cur_el_id": "7542db795d0b11eda169f3585775a667",
+            "parent_id": "7542db775d0b11eda169f3585775a667",
+            "struct_type": "output",
             "x": 0,
             "y": 1300,
-            "text": "if right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]:",
-            "width": 666,
+            "text": "f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}'\n",
+            "width": 252,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -301,16 +301,16 @@
             "index": 14
         },
         {
-            "code": "score += 1",
-            "cur_el_id": "2132d9775aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d9765aa311edbecb87e2cf7c285f",
-            "struct_type": "block",
+            "code": "for answer_index in range(0, len(task)):",
+            "cur_el_id": "7542db7a5d0b11eda169f3585775a667",
+            "parent_id": "7542db775d0b11eda169f3585775a667",
+            "struct_type": "loop",
             "x": 0,
             "y": 1400,
-            "text": "score += 1",
-            "width": 100,
+            "text": "answer_index in range(0, len(task))",
+            "width": 360,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0426\u0438\u043a\u043b for",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -321,16 +321,16 @@
             "index": 15
         },
         {
-            "code": "f.close()\nreturn f'{score}/{str(len(tasks))}'\ndef update_leader_board(user_name, score, test_name):\nf = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()\nreturn f_string\ndef main():\nuser_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests/')",
-            "cur_el_id": "2132d9785aa311edbecb87e2cf7c285f",
-            "parent_id": "0",
-            "struct_type": "block",
+            "code": "print(f'{answer_index+1} -> {task[answer_index]}')",
+            "cur_el_id": "7542db7b5d0b11eda169f3585775a667",
+            "parent_id": "7542db7a5d0b11eda169f3585775a667",
+            "struct_type": "output",
             "x": 0,
             "y": 1500,
-            "text": "f.close()\nreturn f'{score}/{str(len(tasks))}'\ndef update_leader_board(user_name, score, test_name):\nf = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()\nreturn f_string\ndef main():\nuser_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests/')",
-            "width": 486,
-            "height": 112,
-            "type": "\u0411\u043b\u043e\u043a",
+            "text": "f'{answer_index+1} -> {task[answer_index]}'\n",
+            "width": 450,
+            "height": 40,
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -341,16 +341,16 @@
             "index": 16
         },
         {
-            "code": "for i in range(len(tests)):",
-            "cur_el_id": "2132d9795aa311edbecb87e2cf7c285f",
-            "parent_id": "0",
-            "struct_type": "block",
+            "code": "if right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]:",
+            "cur_el_id": "7542db7c5d0b11eda169f3585775a667",
+            "parent_id": "7542db775d0b11eda169f3585775a667",
+            "struct_type": "if",
             "x": 0,
             "y": 1600,
-            "text": "for i in range(len(tests)):",
-            "width": 243,
+            "text": "right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]",
+            "width": 666,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -361,14 +361,14 @@
             "index": 17
         },
         {
-            "code": "tests[i] = tests[i].replace('.txt', '')",
-            "cur_el_id": "2132d97a5aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d9795aa311edbecb87e2cf7c285f",
+            "code": "score += 1",
+            "cur_el_id": "7542db7d5d0b11eda169f3585775a667",
+            "parent_id": "7542db7c5d0b11eda169f3585775a667",
             "struct_type": "block",
-            "x": 0,
+            "x": 100,
             "y": 1700,
-            "text": "tests[i] = tests[i].replace('.txt', '')",
-            "width": 351,
+            "text": "score += 1\n",
+            "width": 100,
             "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
@@ -381,14 +381,14 @@
             "index": 18
         },
         {
-            "code": "for i in range(0, len(tests)):",
-            "cur_el_id": "2132d97b5aa311edbecb87e2cf7c285f",
+            "code": "f.close()",
+            "cur_el_id": "7542db7e5d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 1800,
-            "text": "for i in range(0, len(tests)):",
-            "width": 270,
+            "text": "f.close()\n",
+            "width": 100,
             "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
@@ -401,16 +401,16 @@
             "index": 19
         },
         {
-            "code": "print(f'{i+1} -> {tests[i]}')",
-            "cur_el_id": "2132d97c5aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d97b5aa311edbecb87e2cf7c285f",
+            "code": "return f'{score}/{str(len(tasks))}'",
+            "cur_el_id": "7542db7f5d0b11eda169f3585775a667",
+            "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 1900,
-            "text": "print(f'{i+1} -> {tests[i]}')",
-            "width": 261,
+            "text": "\u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430 f'{score}\u00f7{str(len(tasks))}'",
+            "width": 315,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -421,16 +421,16 @@
             "index": 20
         },
         {
-            "code": "try:\ntest_index = int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n')) - 1",
-            "cur_el_id": "2132d97d5aa311edbecb87e2cf7c285f",
+            "code": "\u041d\u0430\u0447\u0430\u043b\u043e update_leader_board",
+            "cur_el_id": "7542db815d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 2000,
-            "text": "try:\ntest_index = int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n')) - 1",
-            "width": 477,
+            "text": "\u041d\u0430\u0447\u0430\u043b\u043e update_leader_board\n",
+            "width": 234,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -441,16 +441,16 @@
             "index": 21
         },
         {
-            "code": "if test_index < 0:",
-            "cur_el_id": "2132d97e5aa311edbecb87e2cf7c285f",
+            "code": "f,f_string,user_name,score,test_name",
+            "cur_el_id": "7542db805d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 2100,
-            "text": "if test_index < 0:",
-            "width": 162,
+            "text": "f,f_string,user_name,score,test_name\n",
+            "width": 324,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -461,15 +461,15 @@
             "index": 22
         },
         {
-            "code": "raise IndexError",
-            "cur_el_id": "2132d97f5aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d97e5aa311edbecb87e2cf7c285f",
+            "code": "f = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()",
+            "cur_el_id": "7542db825d0b11eda169f3585775a667",
+            "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 2200,
-            "text": "raise IndexError",
-            "width": 144,
-            "height": 40,
+            "text": "f = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()\n",
+            "width": 486,
+            "height": 56,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
             "fontSize": 14,
@@ -481,16 +481,16 @@
             "index": 23
         },
         {
-            "code": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)\nprint(update_leader_board(user_name, score, test_name))",
-            "cur_el_id": "2132d9805aa311edbecb87e2cf7c285f",
+            "code": "return f_string",
+            "cur_el_id": "7542db835d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 2300,
-            "text": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)\nprint(update_leader_board(user_name, score, test_name))",
-            "width": 495,
+            "text": "\u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430 f_string",
+            "width": 135,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -501,53 +501,13 @@
             "index": 24
         },
         {
-            "code": "if __name__ == '__main__':",
-            "cur_el_id": "2132d9815aa311edbecb87e2cf7c285f",
+            "code": "\u041d\u0430\u0447\u0430\u043b\u043e",
+            "cur_el_id": "7542db855d0b11eda169f3585775a667",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 2400,
-            "text": "if __name__ == '__main__':",
-            "width": 234,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 25
-        },
-        {
-            "code": "main()",
-            "cur_el_id": "2132d9825aa311edbecb87e2cf7c285f",
-            "parent_id": "2132d9815aa311edbecb87e2cf7c285f",
-            "struct_type": "block",
-            "x": 0,
-            "y": 2500,
-            "text": "main()",
-            "width": 100,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 26
-        },
-        {
-            "code": "\u041a\u043e\u043d\u0435\u0446",
-            "cur_el_id": "2132d9835aa311edbecb87e2cf7c285f",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 2600,
-            "text": "\u041a\u043e\u043d\u0435\u0446",
+            "text": "\u041d\u0430\u0447\u0430\u043b\u043e\n",
             "width": 100,
             "height": 40,
             "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
@@ -558,7 +518,247 @@
             "isItalic": false,
             "textAlign": "center",
             "labelsPosition": 1,
+            "index": 25
+        },
+        {
+            "code": "test_index,test_name,score,user_name,tests",
+            "cur_el_id": "7542db845d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2500,
+            "text": "test_index,test_name,score,user_name,tests\n",
+            "width": 378,
+            "height": 40,
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 26
+        },
+        {
+            "code": "user_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests/')",
+            "cur_el_id": "7542db865d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2600,
+            "text": "user_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests\u00f7')\n",
+            "width": 306,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
             "index": 27
+        },
+        {
+            "code": "for i in range(len(tests)):",
+            "cur_el_id": "7542db875d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "loop",
+            "x": 0,
+            "y": 2700,
+            "text": "i in range(len(tests))",
+            "width": 243,
+            "height": 40,
+            "type": "\u0426\u0438\u043a\u043b for",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 28
+        },
+        {
+            "code": "tests[i] = tests[i].replace('.txt', '')",
+            "cur_el_id": "7542db885d0b11eda169f3585775a667",
+            "parent_id": "7542db875d0b11eda169f3585775a667",
+            "struct_type": "block",
+            "x": 0,
+            "y": 2800,
+            "text": "tests[i] = tests[i].replace('.txt', '')\n",
+            "width": 351,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 29
+        },
+        {
+            "code": "for i in range(0, len(tests)):",
+            "cur_el_id": "7542db895d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "loop",
+            "x": 0,
+            "y": 2900,
+            "text": "i in range(0, len(tests))",
+            "width": 270,
+            "height": 40,
+            "type": "\u0426\u0438\u043a\u043b for",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 30
+        },
+        {
+            "code": "print(f'{i+1} -> {tests[i]}')",
+            "cur_el_id": "7542db8a5d0b11eda169f3585775a667",
+            "parent_id": "7542db895d0b11eda169f3585775a667",
+            "struct_type": "output",
+            "x": 0,
+            "y": 3000,
+            "text": "f'{i+1} -> {tests[i]}'\n",
+            "width": 261,
+            "height": 40,
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 31
+        },
+        {
+            "code": "try:\ntest_index = int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n')) - 1",
+            "cur_el_id": "7542db8b5d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 3100,
+            "text": "try:\ntest_index =input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n') - 1\n",
+            "width": 477,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 32
+        },
+        {
+            "code": "if test_index < 0:",
+            "cur_el_id": "7542db8c5d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "if",
+            "x": 0,
+            "y": 3200,
+            "text": "test_index < 0",
+            "width": 162,
+            "height": 40,
+            "type": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 33
+        },
+        {
+            "code": "raise IndexError",
+            "cur_el_id": "7542db8d5d0b11eda169f3585775a667",
+            "parent_id": "7542db8c5d0b11eda169f3585775a667",
+            "struct_type": "block",
+            "x": 144,
+            "y": 3300,
+            "text": "raise IndexError\n",
+            "width": 144,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 34
+        },
+        {
+            "code": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)",
+            "cur_el_id": "7542db8e5d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 3400,
+            "text": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)\n",
+            "width": 261,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 35
+        },
+        {
+            "code": "print(update_leader_board(user_name, score, test_name))",
+            "cur_el_id": "7542db8f5d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "output",
+            "x": 0,
+            "y": 3500,
+            "text": "update_leader_board(user_name, score, test_name)\n",
+            "width": 495,
+            "height": 40,
+            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 36
+        },
+        {
+            "code": "\u041a\u043e\u043d\u0435\u0446",
+            "cur_el_id": "7542db905d0b11eda169f3585775a667",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 3600,
+            "text": "\u041a\u043e\u043d\u0435\u0446\n",
+            "width": 100,
+            "height": 40,
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 37
         }
     ],
     "arrows": [
@@ -573,11 +773,11 @@
                     "y": -100
                 },
                 {
-                    "x": 614,
+                    "x": 134,
                     "y": -100
                 },
                 {
-                    "x": 614,
+                    "x": 134,
                     "y": -40
                 },
                 {
@@ -608,11 +808,11 @@
                     "y": 0
                 },
                 {
-                    "x": 343,
+                    "x": 73,
                     "y": 0
                 },
                 {
-                    "x": 343,
+                    "x": 73,
                     "y": 60
                 },
                 {
@@ -643,11 +843,11 @@
                     "y": 100
                 },
                 {
-                    "x": 342,
+                    "x": 102,
                     "y": 100
                 },
                 {
-                    "x": 342,
+                    "x": 102,
                     "y": 160
                 },
                 {
@@ -669,7 +869,7 @@
         },
         {
             "startIndex": 3,
-            "endIndex": 9,
+            "endIndex": 4,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
@@ -678,20 +878,200 @@
                     "y": 200
                 },
                 {
-                    "x": 221,
+                    "x": 101,
                     "y": 200
                 },
                 {
-                    "x": 221,
-                    "y": 760
+                    "x": 101,
+                    "y": 260
                 },
                 {
-                    "x": 800,
-                    "y": 760
+                    "x": 300,
+                    "y": 260
                 },
                 {
-                    "x": 800,
-                    "y": 840
+                    "x": 300,
+                    "y": 340
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 4,
+            "endIndex": 5,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 300
+                },
+                {
+                    "x": 130,
+                    "y": 300
+                },
+                {
+                    "x": 130,
+                    "y": 360
+                },
+                {
+                    "x": 400,
+                    "y": 360
+                },
+                {
+                    "x": 400,
+                    "y": 440
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 5,
+            "endIndex": 7,
+            "startConnectorIndex": 3,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 400
+                },
+                {
+                    "x": 500,
+                    "y": 500
+                }
+            ],
+            "counts": [
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 5,
+            "endIndex": 6,
+            "startConnectorIndex": 1,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 400
+                },
+                {
+                    "x": 500,
+                    "y": 500
+                }
+            ],
+            "counts": [
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 3,
+            "endIndex": 8,
+            "startConnectorIndex": 3,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 200
+                },
+                {
+                    "x": -383,
+                    "y": 200
+                },
+                {
+                    "x": -383,
+                    "y": 660
+                },
+                {
+                    "x": 700,
+                    "y": 660
+                },
+                {
+                    "x": 700,
+                    "y": 740
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 6,
+            "endIndex": 3,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 1,
+            "nodes": [
+                {
+                    "x": 189,
+                    "y": 500
+                },
+                {
+                    "x": 189,
+                    "y": 550
+                },
+                {
+                    "x": 295,
+                    "y": 550
+                },
+                {
+                    "x": 295,
+                    "y": 200
+                },
+                {
+                    "x": 200,
+                    "y": 200
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 7,
+            "endIndex": 3,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 1,
+            "nodes": [
+                {
+                    "x": -189,
+                    "y": 500
+                },
+                {
+                    "x": -189,
+                    "y": 550
+                },
+                {
+                    "x": 316,
+                    "y": 550
+                },
+                {
+                    "x": 316,
+                    "y": 200
+                },
+                {
+                    "x": 200,
+                    "y": 200
                 }
             ],
             "counts": [
@@ -713,11 +1093,11 @@
                     "y": 800
                 },
                 {
-                    "x": 190,
+                    "x": 284,
                     "y": 800
                 },
                 {
-                    "x": 190,
+                    "x": 284,
                     "y": 860
                 },
                 {
@@ -739,7 +1119,7 @@
         },
         {
             "startIndex": 10,
-            "endIndex": 16,
+            "endIndex": 11,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
@@ -748,11 +1128,186 @@
                     "y": 900
                 },
                 {
-                    "x": 369,
+                    "x": 193,
                     "y": 900
                 },
                 {
-                    "x": 369,
+                    "x": 193,
+                    "y": 960
+                },
+                {
+                    "x": 1000,
+                    "y": 960
+                },
+                {
+                    "x": 1000,
+                    "y": 1040
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 11,
+            "endIndex": 12,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1000
+                },
+                {
+                    "x": 192,
+                    "y": 1000
+                },
+                {
+                    "x": 192,
+                    "y": 1060
+                },
+                {
+                    "x": 1100,
+                    "y": 1060
+                },
+                {
+                    "x": 1100,
+                    "y": 1140
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 12,
+            "endIndex": 13,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1100
+                },
+                {
+                    "x": 281,
+                    "y": 1100
+                },
+                {
+                    "x": 281,
+                    "y": 1160
+                },
+                {
+                    "x": 1200,
+                    "y": 1160
+                },
+                {
+                    "x": 1200,
+                    "y": 1240
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 13,
+            "endIndex": 14,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1200
+                },
+                {
+                    "x": 160,
+                    "y": 1200
+                },
+                {
+                    "x": 160,
+                    "y": 1260
+                },
+                {
+                    "x": 1300,
+                    "y": 1260
+                },
+                {
+                    "x": 1300,
+                    "y": 1340
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 14,
+            "endIndex": 15,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1300
+                },
+                {
+                    "x": 219,
+                    "y": 1300
+                },
+                {
+                    "x": 219,
+                    "y": 1360
+                },
+                {
+                    "x": 1400,
+                    "y": 1360
+                },
+                {
+                    "x": 1400,
+                    "y": 1440
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 15,
+            "endIndex": 16,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1400
+                },
+                {
+                    "x": 248,
+                    "y": 1400
+                },
+                {
+                    "x": 248,
                     "y": 1460
                 },
                 {
@@ -773,21 +1328,21 @@
             ]
         },
         {
-            "startIndex": 16,
+            "startIndex": 15,
             "endIndex": 17,
-            "startConnectorIndex": 2,
+            "startConnectorIndex": 3,
             "endConnectorIndex": 0,
             "nodes": [
                 {
                     "x": 0,
-                    "y": 1500
+                    "y": 1400
                 },
                 {
-                    "x": 278,
-                    "y": 1500
+                    "x": -353,
+                    "y": 1400
                 },
                 {
-                    "x": 278,
+                    "x": -353,
                     "y": 1560
                 },
                 {
@@ -808,9 +1363,44 @@
             ]
         },
         {
-            "startIndex": 17,
-            "endIndex": 19,
+            "startIndex": 16,
+            "endIndex": 15,
             "startConnectorIndex": 2,
+            "endConnectorIndex": 1,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1500
+                },
+                {
+                    "x": 0,
+                    "y": 1550
+                },
+                {
+                    "x": 256,
+                    "y": 1550
+                },
+                {
+                    "x": 256,
+                    "y": 1400
+                },
+                {
+                    "x": 1400,
+                    "y": 1400
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 17,
+            "endIndex": 18,
+            "startConnectorIndex": 1,
             "endConnectorIndex": 0,
             "nodes": [
                 {
@@ -818,11 +1408,31 @@
                     "y": 1600
                 },
                 {
-                    "x": 187,
-                    "y": 1600
+                    "x": 1700,
+                    "y": 1700
+                }
+            ],
+            "counts": [
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 12,
+            "endIndex": 19,
+            "startConnectorIndex": 3,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1100
                 },
                 {
-                    "x": 187,
+                    "x": -356,
+                    "y": 1100
+                },
+                {
+                    "x": -356,
                     "y": 1760
                 },
                 {
@@ -843,8 +1453,78 @@
             ]
         },
         {
+            "startIndex": 18,
+            "endIndex": 12,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 1,
+            "nodes": [
+                {
+                    "x": 100,
+                    "y": 1700
+                },
+                {
+                    "x": 100,
+                    "y": 1750
+                },
+                {
+                    "x": 353,
+                    "y": 1750
+                },
+                {
+                    "x": 353,
+                    "y": 1100
+                },
+                {
+                    "x": 1100,
+                    "y": 1100
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 17,
+            "endIndex": 12,
+            "startConnectorIndex": 3,
+            "endConnectorIndex": 1,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 1600
+                },
+                {
+                    "x": 2,
+                    "y": 1650
+                },
+                {
+                    "x": 352,
+                    "y": 1650
+                },
+                {
+                    "x": 352,
+                    "y": 1100
+                },
+                {
+                    "x": 1100,
+                    "y": 1100
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
             "startIndex": 19,
-            "endIndex": 21,
+            "endIndex": 20,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
@@ -853,20 +1533,20 @@
                     "y": 1800
                 },
                 {
-                    "x": 246,
+                    "x": 181,
                     "y": 1800
                 },
                 {
-                    "x": 246,
-                    "y": 1960
+                    "x": 181,
+                    "y": 1860
                 },
                 {
-                    "x": 2000,
-                    "y": 1960
+                    "x": 1900,
+                    "y": 1860
                 },
                 {
-                    "x": 2000,
-                    "y": 2040
+                    "x": 1900,
+                    "y": 1940
                 }
             ],
             "counts": [
@@ -888,11 +1568,11 @@
                     "y": 2000
                 },
                 {
-                    "x": 95,
+                    "x": 194,
                     "y": 2000
                 },
                 {
-                    "x": 95,
+                    "x": 194,
                     "y": 2060
                 },
                 {
@@ -914,7 +1594,7 @@
         },
         {
             "startIndex": 22,
-            "endIndex": 24,
+            "endIndex": 23,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
@@ -923,11 +1603,46 @@
                     "y": 2100
                 },
                 {
-                    "x": 274,
+                    "x": 283,
                     "y": 2100
                 },
                 {
-                    "x": 274,
+                    "x": 283,
+                    "y": 2160
+                },
+                {
+                    "x": 2200,
+                    "y": 2160
+                },
+                {
+                    "x": 2200,
+                    "y": 2240
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 23,
+            "endIndex": 24,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2200
+                },
+                {
+                    "x": 282,
+                    "y": 2200
+                },
+                {
+                    "x": 282,
                     "y": 2260
                 },
                 {
@@ -948,30 +1663,30 @@
             ]
         },
         {
-            "startIndex": 24,
-            "endIndex": 25,
+            "startIndex": 25,
+            "endIndex": 26,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
                 {
                     "x": 0,
-                    "y": 2300
+                    "y": 2400
                 },
                 {
-                    "x": 123,
-                    "y": 2300
+                    "x": 224,
+                    "y": 2400
                 },
                 {
-                    "x": 123,
-                    "y": 2360
+                    "x": 224,
+                    "y": 2460
                 },
                 {
-                    "x": 2400,
-                    "y": 2360
+                    "x": 2500,
+                    "y": 2460
                 },
                 {
-                    "x": 2400,
-                    "y": 2440
+                    "x": 2500,
+                    "y": 2540
                 }
             ],
             "counts": [
@@ -983,21 +1698,21 @@
             ]
         },
         {
-            "startIndex": 25,
+            "startIndex": 26,
             "endIndex": 27,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
                 {
                     "x": 0,
-                    "y": 2400
+                    "y": 2500
                 },
                 {
-                    "x": 62,
-                    "y": 2400
+                    "x": 193,
+                    "y": 2500
                 },
                 {
-                    "x": 62,
+                    "x": 193,
                     "y": 2560
                 },
                 {
@@ -1007,6 +1722,431 @@
                 {
                     "x": 2600,
                     "y": 2640
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 27,
+            "endIndex": 28,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2600
+                },
+                {
+                    "x": 162,
+                    "y": 2600
+                },
+                {
+                    "x": 162,
+                    "y": 2660
+                },
+                {
+                    "x": 2700,
+                    "y": 2660
+                },
+                {
+                    "x": 2700,
+                    "y": 2740
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 28,
+            "endIndex": 29,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2700
+                },
+                {
+                    "x": 191,
+                    "y": 2700
+                },
+                {
+                    "x": 191,
+                    "y": 2760
+                },
+                {
+                    "x": 2800,
+                    "y": 2760
+                },
+                {
+                    "x": 2800,
+                    "y": 2840
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 28,
+            "endIndex": 30,
+            "startConnectorIndex": 3,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2700
+                },
+                {
+                    "x": -170,
+                    "y": 2700
+                },
+                {
+                    "x": -170,
+                    "y": 2860
+                },
+                {
+                    "x": 2900,
+                    "y": 2860
+                },
+                {
+                    "x": 2900,
+                    "y": 2940
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 29,
+            "endIndex": 28,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 1,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2800
+                },
+                {
+                    "x": 0,
+                    "y": 2850
+                },
+                {
+                    "x": 209,
+                    "y": 2850
+                },
+                {
+                    "x": 209,
+                    "y": 2700
+                },
+                {
+                    "x": 2700,
+                    "y": 2700
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 30,
+            "endIndex": 31,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2900
+                },
+                {
+                    "x": 158,
+                    "y": 2900
+                },
+                {
+                    "x": 158,
+                    "y": 2960
+                },
+                {
+                    "x": 3000,
+                    "y": 2960
+                },
+                {
+                    "x": 3000,
+                    "y": 3040
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 30,
+            "endIndex": 32,
+            "startConnectorIndex": 3,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 2900
+                },
+                {
+                    "x": -233,
+                    "y": 2900
+                },
+                {
+                    "x": -233,
+                    "y": 3060
+                },
+                {
+                    "x": 3100,
+                    "y": 3060
+                },
+                {
+                    "x": 3100,
+                    "y": 3140
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 31,
+            "endIndex": 30,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 1,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 3000
+                },
+                {
+                    "x": 0,
+                    "y": 3050
+                },
+                {
+                    "x": 156,
+                    "y": 3050
+                },
+                {
+                    "x": 156,
+                    "y": 2900
+                },
+                {
+                    "x": 2900,
+                    "y": 2900
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 32,
+            "endIndex": 33,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 3100
+                },
+                {
+                    "x": 95,
+                    "y": 3100
+                },
+                {
+                    "x": 95,
+                    "y": 3160
+                },
+                {
+                    "x": 3200,
+                    "y": 3160
+                },
+                {
+                    "x": 3200,
+                    "y": 3240
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 33,
+            "endIndex": 34,
+            "startConnectorIndex": 1,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 3200
+                },
+                {
+                    "x": 3300,
+                    "y": 3300
+                }
+            ],
+            "counts": [
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 34,
+            "endIndex": 35,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 144,
+                    "y": 3300
+                },
+                {
+                    "x": 3400,
+                    "y": 3400
+                }
+            ],
+            "counts": [
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 33,
+            "endIndex": 35,
+            "startConnectorIndex": 3,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 3200
+                },
+                {
+                    "x": -148,
+                    "y": 3200
+                },
+                {
+                    "x": -148,
+                    "y": 3360
+                },
+                {
+                    "x": 3400,
+                    "y": 3360
+                },
+                {
+                    "x": 3400,
+                    "y": 3440
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 35,
+            "endIndex": 36,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 3400
+                },
+                {
+                    "x": 271,
+                    "y": 3400
+                },
+                {
+                    "x": 271,
+                    "y": 3460
+                },
+                {
+                    "x": 3500,
+                    "y": 3460
+                },
+                {
+                    "x": 3500,
+                    "y": 3540
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 36,
+            "endIndex": 37,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 3500
+                },
+                {
+                    "x": 60,
+                    "y": 3500
+                },
+                {
+                    "x": 60,
+                    "y": 3560
+                },
+                {
+                    "x": 3600,
+                    "y": 3560
+                },
+                {
+                    "x": 3600,
+                    "y": 3640
                 }
             ],
             "counts": [

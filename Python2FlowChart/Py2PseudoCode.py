@@ -1,8 +1,8 @@
 import re
-from PyChart.PseudoCode import PseudoCode
+from PyChart import PseudoCode
 
 
-class Python2PseudoCode(PseudoCode):
+class Py2PseudoCode(PseudoCode):
     
     @staticmethod
     def to_pseudocode(lines: str) -> str:

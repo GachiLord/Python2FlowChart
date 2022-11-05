@@ -11,7 +11,7 @@
             "program": "Python2FlowChart/__main__.py",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["/home/oleg/Рабочий стол/example.py" ]
+            "args": ["Python2FlowChart/debug/example.py" ]
         },
         {
             "name": "run with preview",
@@ -20,7 +20,7 @@
             "program": "Python2FlowChart/debug/debug.py",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["/home/oleg/Рабочий стол/example.py" ]
+            "args": ["/debug/example.py" ]
         }
     ]
 }

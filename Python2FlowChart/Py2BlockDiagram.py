@@ -1,4 +1,4 @@
-from PyChart.BlockDiagram import BlockDiagram
+from PyChart import BlockDiagram
 
 
 class Py2BlockDiagram(BlockDiagram):
@@ -17,7 +17,7 @@ class Py2BlockDiagram(BlockDiagram):
             return 'loop'
         elif line[0:5] == 'while':
             return 'loop'
-        elif line[0:3] == 'def':
+        elif line[0:4] == 'def ':
             return 'function'
         else:
             if 'print' in line:
