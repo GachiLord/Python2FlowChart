@@ -36,7 +36,7 @@ Python2FlowChart может построить блок-схему почти п
 
 **1. С установкой**
 
-Скачиваем последний [релиз](https://github.com/GachiLord/Python2FlowChart/releases), сохраняем куда-нибудь.
+Скачиваем последний installable [релиз](https://github.com/GachiLord/Python2FlowChart/releases), сохраняем куда-нибудь.
 В терминале переходим в папку, где лежит 'setup.py'. Пишем:
 ```
 pip install -e .
@@ -49,4 +49,4 @@ py2fc путь_к_файлу
 
 **2. Без установки**
 
-Скачиваем последний [релиз](https://github.com/GachiLord/Python2FlowChart/releases), сохраняем в какую-нибудь директорию. Переходим в Python2FlowChart, запускаем '\_\_main\_\_.py'
+Скачиваем последний portable [релиз](https://github.com/GachiLord/Python2FlowChart/releases), сохраняем в какую-нибудь директорию. Переходим в папку релиза, запускаем '\_\_main\_\_.py'
