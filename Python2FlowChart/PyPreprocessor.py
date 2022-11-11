@@ -94,13 +94,16 @@ class PyPreprocessor(Preprocessor):
         # find ver statements
         for string in code:
             if type(string) == str:
-                m += re.findall(r'(\w+)\.? ?= ?', string)
-                m += re.findall(r'for (\w+)\.?', string)
-                m += re.findall(r'while (\w+)\.?', string)
-                m += re.findall(r'for (\w+)', string)
-                m += re.findall(r'in +(\w+)\.?', string)
-                if '(' in string:
-                    m += re.findall(r'[a-zA-Z_0-9]+', string[string.index('(')+1:string[::-1].index(')')])
+                try:
+                    m += re.findall(r'(\w+)\.? ?= ?', string)
+                    m += re.findall(r'for (\w+)\.?', string)
+                    m += re.findall(r'while (\w+)\.?', string)
+                    m += re.findall(r'for (\w+)', string)
+                    m += re.findall(r'in +(\w+)\.?', string)
+                    if '(' in string:
+                        m += re.findall(r'[a-zA-Z_0-9]+', string[string.index('(') + 1:string[::-1].index(')')])
+                except ValueError:
+                    print('wrong syntax on line:', f'"{string}"')
             else:
                 value = list(string.values())[0]
                 m += self._find_all_veribles(value)

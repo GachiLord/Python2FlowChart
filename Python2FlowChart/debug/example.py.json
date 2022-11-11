@@ -1,14 +1,14 @@
 {
     "blocks": [
         {
-            "code": "\u041d\u0430\u0447\u0430\u043b\u043e get_parsed_test",
-            "cur_el_id": "9c3ef6235db511eda6cacd7dfd66ab4e",
+            "code": "\u041d\u0430\u0447\u0430\u043b\u043e pointless_fun",
+            "cur_el_id": "dae184f561c411ed85abdd311c373877",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": -100,
-            "text": "\u041d\u0430\u0447\u0430\u043b\u043e get_parsed_test\n",
-            "width": 198,
+            "text": "\u041d\u0430\u0447\u0430\u043b\u043e pointless_fun\n",
+            "width": 180,
             "height": 40,
             "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
@@ -21,14 +21,14 @@
             "index": 0
         },
         {
-            "code": "cur_task,test,line,f",
-            "cur_el_id": "9c3ef6225db511eda6cacd7dfd66ab4e",
+            "code": "dictionary,num",
+            "cur_el_id": "dae184f461c411ed85abdd311c373877",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
             "y": 0,
-            "text": "cur_task,test,line,f\n",
-            "width": 180,
+            "text": "dictionary,num\n",
+            "width": 126,
             "height": 40,
             "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
             "isMenuBlock": false,
@@ -41,16 +41,16 @@
             "index": 1
         },
         {
-            "code": "test = {}\ncur_task = []",
-            "cur_el_id": "9c3ef6245db511eda6cacd7dfd66ab4e",
+            "code": "for key in dictionary:",
+            "cur_el_id": "dae184f661c411ed85abdd311c373877",
             "parent_id": "0",
-            "struct_type": "block",
+            "struct_type": "loop",
             "x": 0,
             "y": 150,
-            "text": "test = {}\ncur_task = []\n",
-            "width": 117,
+            "text": "key in dictionary",
+            "width": 198,
             "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
+            "type": "\u0426\u0438\u043a\u043b for",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -61,16 +61,16 @@
             "index": 2
         },
         {
-            "code": "for line in f:",
-            "cur_el_id": "9c3ef6255db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "loop",
+            "code": "if len(key) == num:",
+            "cur_el_id": "dae184f761c411ed85abdd311c373877",
+            "parent_id": "dae184f661c411ed85abdd311c373877",
+            "struct_type": "if",
             "x": 0,
             "y": 300,
-            "text": "line in f",
-            "width": 126,
+            "text": "len(key) == num",
+            "width": 171,
             "height": 40,
-            "type": "\u0426\u0438\u043a\u043b for",
+            "type": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -81,14 +81,14 @@
             "index": 3
         },
         {
-            "code": "line = line.strip()",
-            "cur_el_id": "9c3ef6265db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6255db511eda6cacd7dfd66ab4e",
+            "code": "dictionary[key] += '+'",
+            "cur_el_id": "dae184f861c411ed85abdd311c373877",
+            "parent_id": "dae184f761c411ed85abdd311c373877",
             "struct_type": "block",
-            "x": 0,
+            "x": 198,
             "y": 450,
-            "text": "line = line.strip()\n",
-            "width": 171,
+            "text": "dictionary[key] += '+'\n",
+            "width": 198,
             "height": 40,
             "type": "\u0411\u043b\u043e\u043a",
             "isMenuBlock": false,
@@ -101,16 +101,16 @@
             "index": 4
         },
         {
-            "code": "if not line.isdigit():",
-            "cur_el_id": "9c3ef6275db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6255db511eda6cacd7dfd66ab4e",
-            "struct_type": "if",
+            "code": "return dictionary",
+            "cur_el_id": "dae184f961c411ed85abdd311c373877",
+            "parent_id": "0",
+            "struct_type": "block",
             "x": 0,
             "y": 600,
-            "text": "not line.isdigit()",
-            "width": 198,
+            "text": "\u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430 dictionary",
+            "width": 153,
             "height": 40,
-            "type": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435",
+            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
             "isMenuBlock": false,
             "fontSize": 14,
             "textHeight": 14,
@@ -121,392 +121,12 @@
             "index": 5
         },
         {
-            "code": "cur_task.append(line)",
-            "cur_el_id": "9c3ef6285db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6275db511eda6cacd7dfd66ab4e",
-            "struct_type": "block",
-            "x": 189,
-            "y": 750,
-            "text": "cur_task.append(line)\n",
-            "width": 189,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 6
-        },
-        {
-            "code": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []",
-            "cur_el_id": "9c3ef62a5db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6275db511eda6cacd7dfd66ab4e-else",
-            "struct_type": "block",
-            "x": -189,
-            "y": 750,
-            "text": "test[line + '_' + uuid1().hex] = cur_task\ncur_task = []\n",
-            "width": 369,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 7
-        },
-        {
-            "code": "return test",
-            "cur_el_id": "9c3ef62b5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 1050,
-            "text": "\u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430 test",
-            "width": 100,
-            "height": 40,
-            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 8
-        },
-        {
-            "code": "\u041d\u0430\u0447\u0430\u043b\u043e game",
-            "cur_el_id": "9c3ef62d5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 1250,
-            "text": "\u041d\u0430\u0447\u0430\u043b\u043e game\n",
-            "width": 100,
-            "height": 40,
-            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 9
-        },
-        {
-            "code": "right_answer,question,score,task,tasks,test_ids,f,test_name",
-            "cur_el_id": "9c3ef62c5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 1350,
-            "text": "right_answer,question,score,task,tasks,test_ids,f,test_name\n",
-            "width": 531,
-            "height": 40,
-            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 10
-        },
-        {
-            "code": "try:\nf = open(f'tests/{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids = list(tasks.keys())\nshuffle(test_ids)\nscore = 0",
-            "cur_el_id": "9c3ef62e5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 1500,
-            "text": "try:\nf = open(f'tests\u00f7{test_name}.txt')\nexcept FileNotFoundError:\nexit(no_test_error_msg)\ntasks = get_parsed_test(f)\ntest_ids =tasks.keys()\nshuffle(test_ids)\nscore = 0\n",
-            "width": 306,
-            "height": 64,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 11
-        },
-        {
-            "code": "for test_id in test_ids:",
-            "cur_el_id": "9c3ef62f5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "loop",
-            "x": 0,
-            "y": 1650,
-            "text": "test_id in test_ids",
-            "width": 216,
-            "height": 40,
-            "type": "\u0426\u0438\u043a\u043b for",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 12
-        },
-        {
-            "code": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)",
-            "cur_el_id": "9c3ef6305db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef62f5db511eda6cacd7dfd66ab4e",
-            "struct_type": "block",
-            "x": 0,
-            "y": 1800,
-            "text": "task = tasks[test_id]\nquestion = task.copy()[0]\ntask = task[1::]\nright_answer = task.copy()[int(test_id.split('_')[0])-1]\nshuffle(task)\n",
-            "width": 504,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 13
-        },
-        {
-            "code": "print(f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}')",
-            "cur_el_id": "9c3ef6315db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef62f5db511eda6cacd7dfd66ab4e",
-            "struct_type": "output",
-            "x": 0,
-            "y": 1950,
-            "text": "f'\u0412\u043e\u043f\u0440\u043e\u0441: {question}'\n",
-            "width": 252,
-            "height": 40,
-            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 14
-        },
-        {
-            "code": "for answer_index in range(0, len(task)):",
-            "cur_el_id": "9c3ef6325db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef62f5db511eda6cacd7dfd66ab4e",
-            "struct_type": "loop",
-            "x": 0,
-            "y": 2100,
-            "text": "answer_index in range(0, len(task))",
-            "width": 360,
-            "height": 40,
-            "type": "\u0426\u0438\u043a\u043b for",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 15
-        },
-        {
-            "code": "print(f'{answer_index+1} -> {task[answer_index]}')",
-            "cur_el_id": "9c3ef6335db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6325db511eda6cacd7dfd66ab4e",
-            "struct_type": "output",
-            "x": 0,
-            "y": 2250,
-            "text": "f'{answer_index+1} -> {task[answer_index]}'\n",
-            "width": 450,
-            "height": 40,
-            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 16
-        },
-        {
-            "code": "if right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]:",
-            "cur_el_id": "9c3ef6345db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef62f5db511eda6cacd7dfd66ab4e",
-            "struct_type": "if",
-            "x": 0,
-            "y": 2400,
-            "text": "right_answer == task[int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u043e\u0442\u0432\u0435\u0442\u0430: \\n').strip())-1]",
-            "width": 666,
-            "height": 40,
-            "type": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 17
-        },
-        {
-            "code": "score += 1",
-            "cur_el_id": "9c3ef6355db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6345db511eda6cacd7dfd66ab4e",
-            "struct_type": "block",
-            "x": 100,
-            "y": 2550,
-            "text": "score += 1\n",
-            "width": 100,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 18
-        },
-        {
-            "code": "f.close()",
-            "cur_el_id": "9c3ef6365db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 2700,
-            "text": "f.close()\n",
-            "width": 100,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 19
-        },
-        {
-            "code": "return f'{score}/{str(len(tasks))}'",
-            "cur_el_id": "9c3ef6375db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 2850,
-            "text": "\u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430 f'{score}\u00f7{str(len(tasks))}'",
-            "width": 315,
-            "height": 40,
-            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 20
-        },
-        {
-            "code": "\u041d\u0430\u0447\u0430\u043b\u043e update_leader_board",
-            "cur_el_id": "9c3ef6395db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 3050,
-            "text": "\u041d\u0430\u0447\u0430\u043b\u043e update_leader_board\n",
-            "width": 234,
-            "height": 40,
-            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 21
-        },
-        {
-            "code": "f_string,f,user_name,score,test_name",
-            "cur_el_id": "9c3ef6385db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 3150,
-            "text": "f_string,f,user_name,score,test_name\n",
-            "width": 324,
-            "height": 40,
-            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 22
-        },
-        {
-            "code": "f = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()",
-            "cur_el_id": "9c3ef63a5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 3300,
-            "text": "f = open('leader_board.txt', 'r')\nf_string = f.read()\nf.close()\nf_string += f'{user_name} -> {score} -> {test_name}\\n'\nf = open('leader_board.txt', 'w+')\nf.write(f_string)\nf.close()\n",
-            "width": 486,
-            "height": 56,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 23
-        },
-        {
-            "code": "return f_string",
-            "cur_el_id": "9c3ef63b5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 3450,
-            "text": "\u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430 f_string",
-            "width": 135,
-            "height": 40,
-            "type": "\u041d\u0430\u0447\u0430\u043b\u043e / \u043a\u043e\u043d\u0435\u0446",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 24
-        },
-        {
             "code": "\u041d\u0430\u0447\u0430\u043b\u043e",
-            "cur_el_id": "9c3ef63d5db511eda6cacd7dfd66ab4e",
+            "cur_el_id": "dae184fa61c411ed85abdd311c373877",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
-            "y": 3650,
+            "y": 800,
             "text": "\u041d\u0430\u0447\u0430\u043b\u043e\n",
             "width": 100,
             "height": 40,
@@ -518,217 +138,17 @@
             "isItalic": false,
             "textAlign": "center",
             "labelsPosition": 1,
-            "index": 25
+            "index": 6
         },
         {
-            "code": "tests,test_name,score,user_name,test_index",
-            "cur_el_id": "9c3ef63c5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 3750,
-            "text": "tests,test_name,score,user_name,test_index\n",
-            "width": 378,
-            "height": 40,
-            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 26
-        },
-        {
-            "code": "user_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests/')",
-            "cur_el_id": "9c3ef63e5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 3900,
-            "text": "user_name = input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f: ')\ntests = listdir('tests\u00f7')\n",
-            "width": 306,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 27
-        },
-        {
-            "code": "for i in range(len(tests)):",
-            "cur_el_id": "9c3ef63f5db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "loop",
-            "x": 0,
-            "y": 4050,
-            "text": "i in range(len(tests))",
-            "width": 243,
-            "height": 40,
-            "type": "\u0426\u0438\u043a\u043b for",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 28
-        },
-        {
-            "code": "tests[i] = tests[i].replace('.txt', '')",
-            "cur_el_id": "9c3ef6405db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef63f5db511eda6cacd7dfd66ab4e",
-            "struct_type": "block",
-            "x": 0,
-            "y": 4200,
-            "text": "tests[i] = tests[i].replace('.txt', '')\n",
-            "width": 351,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 29
-        },
-        {
-            "code": "for i in range(0, len(tests)):",
-            "cur_el_id": "9c3ef6415db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "loop",
-            "x": 0,
-            "y": 4350,
-            "text": "i in range(0, len(tests))",
-            "width": 270,
-            "height": 40,
-            "type": "\u0426\u0438\u043a\u043b for",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 30
-        },
-        {
-            "code": "print(f'{i+1} -> {tests[i]}')",
-            "cur_el_id": "9c3ef6425db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6415db511eda6cacd7dfd66ab4e",
-            "struct_type": "output",
-            "x": 0,
-            "y": 4500,
-            "text": "f'{i+1} -> {tests[i]}'\n",
-            "width": 261,
-            "height": 40,
-            "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 31
-        },
-        {
-            "code": "try:\ntest_index = int(input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n')) - 1",
-            "cur_el_id": "9c3ef6435db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 4650,
-            "text": "try:\ntest_index =input('\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0442\u0435\u0441\u0442\u0430:\\n') - 1\n",
-            "width": 477,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 32
-        },
-        {
-            "code": "if test_index < 0:",
-            "cur_el_id": "9c3ef6445db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "if",
-            "x": 0,
-            "y": 4800,
-            "text": "test_index < 0",
-            "width": 162,
-            "height": 40,
-            "type": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 33
-        },
-        {
-            "code": "raise IndexError",
-            "cur_el_id": "9c3ef6455db511eda6cacd7dfd66ab4e",
-            "parent_id": "9c3ef6445db511eda6cacd7dfd66ab4e",
-            "struct_type": "block",
-            "x": 144,
-            "y": 4950,
-            "text": "raise IndexError\n",
-            "width": 144,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 34
-        },
-        {
-            "code": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)",
-            "cur_el_id": "9c3ef6465db511eda6cacd7dfd66ab4e",
-            "parent_id": "0",
-            "struct_type": "block",
-            "x": 0,
-            "y": 5100,
-            "text": "test_name = tests[test_index]\nexcept IndexError:\nexit(no_test_error_msg)\nscore = game(test_name)\n",
-            "width": 261,
-            "height": 40,
-            "type": "\u0411\u043b\u043e\u043a",
-            "isMenuBlock": false,
-            "fontSize": 14,
-            "textHeight": 14,
-            "isBold": false,
-            "isItalic": false,
-            "textAlign": "center",
-            "labelsPosition": 1,
-            "index": 35
-        },
-        {
-            "code": "print(update_leader_board(user_name, score, test_name))",
-            "cur_el_id": "9c3ef6475db511eda6cacd7dfd66ab4e",
+            "code": "print(",
+            "cur_el_id": "dae184fb61c411ed85abdd311c373877",
             "parent_id": "0",
             "struct_type": "output",
             "x": 0,
-            "y": 5250,
-            "text": "update_leader_board(user_name, score, test_name)\n",
-            "width": 495,
+            "y": 1050,
+            "text": "print(\n",
+            "width": 100,
             "height": 40,
             "type": "\u0412\u0432\u043e\u0434 / \u0432\u044b\u0432\u043e\u0434",
             "isMenuBlock": false,
@@ -738,15 +158,35 @@
             "isItalic": false,
             "textAlign": "center",
             "labelsPosition": 1,
-            "index": 36
+            "index": 7
+        },
+        {
+            "code": "pointless_fun({'a': 'fas', 'b': '2ads'}, 1)\n)",
+            "cur_el_id": "dae184fc61c411ed85abdd311c373877",
+            "parent_id": "0",
+            "struct_type": "block",
+            "x": 0,
+            "y": 1200,
+            "text": "pointless_fun({'a': 'fas', 'b': '2ads'}, 1)\n)\n",
+            "width": 387,
+            "height": 40,
+            "type": "\u0411\u043b\u043e\u043a",
+            "isMenuBlock": false,
+            "fontSize": 14,
+            "textHeight": 14,
+            "isBold": false,
+            "isItalic": false,
+            "textAlign": "center",
+            "labelsPosition": 1,
+            "index": 8
         },
         {
             "code": "\u041a\u043e\u043d\u0435\u0446",
-            "cur_el_id": "9c3ef6485db511eda6cacd7dfd66ab4e",
+            "cur_el_id": "dae184fd61c411ed85abdd311c373877",
             "parent_id": "0",
             "struct_type": "block",
             "x": 0,
-            "y": 5350,
+            "y": 1300,
             "text": "\u041a\u043e\u043d\u0435\u0446\n",
             "width": 100,
             "height": 40,
@@ -758,7 +198,7 @@
             "isItalic": false,
             "textAlign": "center",
             "labelsPosition": 1,
-            "index": 37
+            "index": 9
         }
     ],
     "arrows": [
@@ -773,11 +213,11 @@
                     "y": -100
                 },
                 {
-                    "x": 134,
+                    "x": 104,
                     "y": -100
                 },
                 {
-                    "x": 134,
+                    "x": 104,
                     "y": -40
                 },
                 {
@@ -808,11 +248,11 @@
                     "y": 0
                 },
                 {
-                    "x": 73,
+                    "x": 133,
                     "y": 0
                 },
                 {
-                    "x": 73,
+                    "x": 133,
                     "y": 110
                 },
                 {
@@ -870,7 +310,7 @@
         {
             "startIndex": 3,
             "endIndex": 4,
-            "startConnectorIndex": 2,
+            "startConnectorIndex": 1,
             "endConnectorIndex": 0,
             "nodes": [
                 {
@@ -878,46 +318,31 @@
                     "y": 300
                 },
                 {
-                    "x": 101,
-                    "y": 300
-                },
-                {
-                    "x": 101,
-                    "y": 410
-                },
-                {
                     "x": 450,
-                    "y": 410
-                },
-                {
-                    "x": 450,
-                    "y": 490
+                    "y": 450
                 }
             ],
             "counts": [
-                1,
-                1,
-                1,
                 1,
                 1
             ]
         },
         {
-            "startIndex": 4,
+            "startIndex": 2,
             "endIndex": 5,
-            "startConnectorIndex": 2,
+            "startConnectorIndex": 3,
             "endConnectorIndex": 0,
             "nodes": [
                 {
                     "x": 0,
-                    "y": 450
+                    "y": 150
                 },
                 {
-                    "x": 130,
-                    "y": 450
+                    "x": -80,
+                    "y": 150
                 },
                 {
-                    "x": 130,
+                    "x": -80,
                     "y": 560
                 },
                 {
@@ -938,61 +363,91 @@
             ]
         },
         {
-            "startIndex": 5,
-            "endIndex": 7,
-            "startConnectorIndex": 3,
-            "endConnectorIndex": 0,
+            "startIndex": 4,
+            "endIndex": 2,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 1,
             "nodes": [
                 {
-                    "x": 0,
-                    "y": 600
+                    "x": 198,
+                    "y": 450
                 },
                 {
-                    "x": 750,
-                    "y": 750
+                    "x": 198,
+                    "y": 500
+                },
+                {
+                    "x": 307,
+                    "y": 500
+                },
+                {
+                    "x": 307,
+                    "y": 150
+                },
+                {
+                    "x": 150,
+                    "y": 150
                 }
             ],
             "counts": [
                 1,
-                1
-            ]
-        },
-        {
-            "startIndex": 5,
-            "endIndex": 6,
-            "startConnectorIndex": 1,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 600
-                },
-                {
-                    "x": 750,
-                    "y": 750
-                }
-            ],
-            "counts": [
+                1,
+                1,
                 1,
                 1
             ]
         },
         {
             "startIndex": 3,
-            "endIndex": 8,
+            "endIndex": 2,
             "startConnectorIndex": 3,
-            "endConnectorIndex": 0,
+            "endConnectorIndex": 1,
             "nodes": [
                 {
                     "x": 0,
                     "y": 300
                 },
                 {
-                    "x": -383,
-                    "y": 300
+                    "x": 8,
+                    "y": 350
                 },
                 {
-                    "x": -383,
+                    "x": 108,
+                    "y": 350
+                },
+                {
+                    "x": 108,
+                    "y": 150
+                },
+                {
+                    "x": 150,
+                    "y": 150
+                }
+            ],
+            "counts": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "startIndex": 6,
+            "endIndex": 7,
+            "startConnectorIndex": 2,
+            "endConnectorIndex": 0,
+            "nodes": [
+                {
+                    "x": 0,
+                    "y": 800
+                },
+                {
+                    "x": 74,
+                    "y": 800
+                },
+                {
+                    "x": 74,
                     "y": 1010
                 },
                 {
@@ -1013,100 +468,30 @@
             ]
         },
         {
-            "startIndex": 6,
-            "endIndex": 3,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 1,
-            "nodes": [
-                {
-                    "x": 189,
-                    "y": 750
-                },
-                {
-                    "x": 189,
-                    "y": 800
-                },
-                {
-                    "x": 295,
-                    "y": 800
-                },
-                {
-                    "x": 295,
-                    "y": 300
-                },
-                {
-                    "x": 300,
-                    "y": 300
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
             "startIndex": 7,
-            "endIndex": 3,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 1,
-            "nodes": [
-                {
-                    "x": -189,
-                    "y": 750
-                },
-                {
-                    "x": -189,
-                    "y": 800
-                },
-                {
-                    "x": 316,
-                    "y": 800
-                },
-                {
-                    "x": 316,
-                    "y": 300
-                },
-                {
-                    "x": 300,
-                    "y": 300
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 9,
-            "endIndex": 10,
+            "endIndex": 8,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
                 {
                     "x": 0,
-                    "y": 1250
+                    "y": 1050
                 },
                 {
-                    "x": 284,
-                    "y": 1250
+                    "x": 223,
+                    "y": 1050
                 },
                 {
-                    "x": 284,
-                    "y": 1310
+                    "x": 223,
+                    "y": 1160
                 },
                 {
-                    "x": 1350,
-                    "y": 1310
+                    "x": 1200,
+                    "y": 1160
                 },
                 {
-                    "x": 1350,
-                    "y": 1390
+                    "x": 1200,
+                    "y": 1240
                 }
             ],
             "counts": [
@@ -1118,1035 +503,30 @@
             ]
         },
         {
-            "startIndex": 10,
-            "endIndex": 11,
+            "startIndex": 8,
+            "endIndex": 9,
             "startConnectorIndex": 2,
             "endConnectorIndex": 0,
             "nodes": [
                 {
                     "x": 0,
-                    "y": 1350
+                    "y": 1200
                 },
                 {
-                    "x": 193,
-                    "y": 1350
+                    "x": 72,
+                    "y": 1200
                 },
                 {
-                    "x": 193,
-                    "y": 1460
+                    "x": 72,
+                    "y": 1260
                 },
                 {
-                    "x": 1500,
-                    "y": 1460
+                    "x": 1300,
+                    "y": 1260
                 },
                 {
-                    "x": 1500,
-                    "y": 1540
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 11,
-            "endIndex": 12,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 1500
-                },
-                {
-                    "x": 192,
-                    "y": 1500
-                },
-                {
-                    "x": 192,
-                    "y": 1610
-                },
-                {
-                    "x": 1650,
-                    "y": 1610
-                },
-                {
-                    "x": 1650,
-                    "y": 1690
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 12,
-            "endIndex": 13,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 1650
-                },
-                {
-                    "x": 281,
-                    "y": 1650
-                },
-                {
-                    "x": 281,
-                    "y": 1760
-                },
-                {
-                    "x": 1800,
-                    "y": 1760
-                },
-                {
-                    "x": 1800,
-                    "y": 1840
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 13,
-            "endIndex": 14,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 1800
-                },
-                {
-                    "x": 160,
-                    "y": 1800
-                },
-                {
-                    "x": 160,
-                    "y": 1910
-                },
-                {
-                    "x": 1950,
-                    "y": 1910
-                },
-                {
-                    "x": 1950,
-                    "y": 1990
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 14,
-            "endIndex": 15,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 1950
-                },
-                {
-                    "x": 219,
-                    "y": 1950
-                },
-                {
-                    "x": 219,
-                    "y": 2060
-                },
-                {
-                    "x": 2100,
-                    "y": 2060
-                },
-                {
-                    "x": 2100,
-                    "y": 2140
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 15,
-            "endIndex": 16,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 2100
-                },
-                {
-                    "x": 248,
-                    "y": 2100
-                },
-                {
-                    "x": 248,
-                    "y": 2210
-                },
-                {
-                    "x": 2250,
-                    "y": 2210
-                },
-                {
-                    "x": 2250,
-                    "y": 2290
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 15,
-            "endIndex": 17,
-            "startConnectorIndex": 3,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 2100
-                },
-                {
-                    "x": -353,
-                    "y": 2100
-                },
-                {
-                    "x": -353,
-                    "y": 2360
-                },
-                {
-                    "x": 2400,
-                    "y": 2360
-                },
-                {
-                    "x": 2400,
-                    "y": 2440
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 16,
-            "endIndex": 15,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 1,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 2250
-                },
-                {
-                    "x": 0,
-                    "y": 2300
-                },
-                {
-                    "x": 256,
-                    "y": 2300
-                },
-                {
-                    "x": 256,
-                    "y": 2100
-                },
-                {
-                    "x": 2100,
-                    "y": 2100
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 17,
-            "endIndex": 18,
-            "startConnectorIndex": 1,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 2400
-                },
-                {
-                    "x": 2550,
-                    "y": 2550
-                }
-            ],
-            "counts": [
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 12,
-            "endIndex": 19,
-            "startConnectorIndex": 3,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 1650
-                },
-                {
-                    "x": -356,
-                    "y": 1650
-                },
-                {
-                    "x": -356,
-                    "y": 2660
-                },
-                {
-                    "x": 2700,
-                    "y": 2660
-                },
-                {
-                    "x": 2700,
-                    "y": 2740
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 18,
-            "endIndex": 12,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 1,
-            "nodes": [
-                {
-                    "x": 100,
-                    "y": 2550
-                },
-                {
-                    "x": 100,
-                    "y": 2600
-                },
-                {
-                    "x": 353,
-                    "y": 2600
-                },
-                {
-                    "x": 353,
-                    "y": 1650
-                },
-                {
-                    "x": 1650,
-                    "y": 1650
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 17,
-            "endIndex": 12,
-            "startConnectorIndex": 3,
-            "endConnectorIndex": 1,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 2400
-                },
-                {
-                    "x": 2,
-                    "y": 2450
-                },
-                {
-                    "x": 352,
-                    "y": 2450
-                },
-                {
-                    "x": 352,
-                    "y": 1650
-                },
-                {
-                    "x": 1650,
-                    "y": 1650
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 19,
-            "endIndex": 20,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 2700
-                },
-                {
-                    "x": 181,
-                    "y": 2700
-                },
-                {
-                    "x": 181,
-                    "y": 2810
-                },
-                {
-                    "x": 2850,
-                    "y": 2810
-                },
-                {
-                    "x": 2850,
-                    "y": 2890
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 21,
-            "endIndex": 22,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 3050
-                },
-                {
-                    "x": 194,
-                    "y": 3050
-                },
-                {
-                    "x": 194,
-                    "y": 3110
-                },
-                {
-                    "x": 3150,
-                    "y": 3110
-                },
-                {
-                    "x": 3150,
-                    "y": 3190
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 22,
-            "endIndex": 23,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 3150
-                },
-                {
-                    "x": 283,
-                    "y": 3150
-                },
-                {
-                    "x": 283,
-                    "y": 3260
-                },
-                {
-                    "x": 3300,
-                    "y": 3260
-                },
-                {
-                    "x": 3300,
-                    "y": 3340
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 23,
-            "endIndex": 24,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 3300
-                },
-                {
-                    "x": 282,
-                    "y": 3300
-                },
-                {
-                    "x": 282,
-                    "y": 3410
-                },
-                {
-                    "x": 3450,
-                    "y": 3410
-                },
-                {
-                    "x": 3450,
-                    "y": 3490
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 25,
-            "endIndex": 26,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 3650
-                },
-                {
-                    "x": 224,
-                    "y": 3650
-                },
-                {
-                    "x": 224,
-                    "y": 3710
-                },
-                {
-                    "x": 3750,
-                    "y": 3710
-                },
-                {
-                    "x": 3750,
-                    "y": 3790
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 26,
-            "endIndex": 27,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 3750
-                },
-                {
-                    "x": 193,
-                    "y": 3750
-                },
-                {
-                    "x": 193,
-                    "y": 3860
-                },
-                {
-                    "x": 3900,
-                    "y": 3860
-                },
-                {
-                    "x": 3900,
-                    "y": 3940
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 27,
-            "endIndex": 28,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 3900
-                },
-                {
-                    "x": 162,
-                    "y": 3900
-                },
-                {
-                    "x": 162,
-                    "y": 4010
-                },
-                {
-                    "x": 4050,
-                    "y": 4010
-                },
-                {
-                    "x": 4050,
-                    "y": 4090
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 28,
-            "endIndex": 29,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4050
-                },
-                {
-                    "x": 191,
-                    "y": 4050
-                },
-                {
-                    "x": 191,
-                    "y": 4160
-                },
-                {
-                    "x": 4200,
-                    "y": 4160
-                },
-                {
-                    "x": 4200,
-                    "y": 4240
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 28,
-            "endIndex": 30,
-            "startConnectorIndex": 3,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4050
-                },
-                {
-                    "x": -170,
-                    "y": 4050
-                },
-                {
-                    "x": -170,
-                    "y": 4310
-                },
-                {
-                    "x": 4350,
-                    "y": 4310
-                },
-                {
-                    "x": 4350,
-                    "y": 4390
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 29,
-            "endIndex": 28,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 1,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4200
-                },
-                {
-                    "x": 0,
-                    "y": 4250
-                },
-                {
-                    "x": 209,
-                    "y": 4250
-                },
-                {
-                    "x": 209,
-                    "y": 4050
-                },
-                {
-                    "x": 4050,
-                    "y": 4050
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 30,
-            "endIndex": 31,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4350
-                },
-                {
-                    "x": 158,
-                    "y": 4350
-                },
-                {
-                    "x": 158,
-                    "y": 4460
-                },
-                {
-                    "x": 4500,
-                    "y": 4460
-                },
-                {
-                    "x": 4500,
-                    "y": 4540
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 30,
-            "endIndex": 32,
-            "startConnectorIndex": 3,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4350
-                },
-                {
-                    "x": -233,
-                    "y": 4350
-                },
-                {
-                    "x": -233,
-                    "y": 4610
-                },
-                {
-                    "x": 4650,
-                    "y": 4610
-                },
-                {
-                    "x": 4650,
-                    "y": 4690
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 31,
-            "endIndex": 30,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 1,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4500
-                },
-                {
-                    "x": 0,
-                    "y": 4550
-                },
-                {
-                    "x": 156,
-                    "y": 4550
-                },
-                {
-                    "x": 156,
-                    "y": 4350
-                },
-                {
-                    "x": 4350,
-                    "y": 4350
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 32,
-            "endIndex": 33,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4650
-                },
-                {
-                    "x": 95,
-                    "y": 4650
-                },
-                {
-                    "x": 95,
-                    "y": 4760
-                },
-                {
-                    "x": 4800,
-                    "y": 4760
-                },
-                {
-                    "x": 4800,
-                    "y": 4840
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 33,
-            "endIndex": 34,
-            "startConnectorIndex": 1,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4800
-                },
-                {
-                    "x": 4950,
-                    "y": 4950
-                }
-            ],
-            "counts": [
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 34,
-            "endIndex": 35,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 144,
-                    "y": 4950
-                },
-                {
-                    "x": 5100,
-                    "y": 5100
-                }
-            ],
-            "counts": [
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 33,
-            "endIndex": 35,
-            "startConnectorIndex": 3,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 4800
-                },
-                {
-                    "x": -148,
-                    "y": 4800
-                },
-                {
-                    "x": -148,
-                    "y": 5060
-                },
-                {
-                    "x": 5100,
-                    "y": 5060
-                },
-                {
-                    "x": 5100,
-                    "y": 5140
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 35,
-            "endIndex": 36,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 5100
-                },
-                {
-                    "x": 271,
-                    "y": 5100
-                },
-                {
-                    "x": 271,
-                    "y": 5210
-                },
-                {
-                    "x": 5250,
-                    "y": 5210
-                },
-                {
-                    "x": 5250,
-                    "y": 5290
-                }
-            ],
-            "counts": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ]
-        },
-        {
-            "startIndex": 36,
-            "endIndex": 37,
-            "startConnectorIndex": 2,
-            "endConnectorIndex": 0,
-            "nodes": [
-                {
-                    "x": 0,
-                    "y": 5250
-                },
-                {
-                    "x": 60,
-                    "y": 5250
-                },
-                {
-                    "x": 60,
-                    "y": 5310
-                },
-                {
-                    "x": 5350,
-                    "y": 5310
-                },
-                {
-                    "x": 5350,
-                    "y": 5390
+                    "x": 1300,
+                    "y": 1340
                 }
             ],
             "counts": [
